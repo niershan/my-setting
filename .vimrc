@@ -1,6 +1,6 @@
-set lines=200
-set columns=200
-let g:treeExplWinSize=30
+set lines=100
+set columns=150
+let g:treeExplWinSize=50
 set cursorline
 set nowrap
 "colorscheme
