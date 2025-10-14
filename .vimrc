@@ -1,10 +1,13 @@
+let g:NERDTreeWinSize = 50
+autocmd VimEnter * NERDTree
+nnoremap <leader>n :NERDTreeToggle<CR>
 set lines=100
-set columns=150
-let g:treeExplWinSize=50
+set columns=200
 set cursorline
 set nowrap
 "colorscheme
-colorscheme desert
+"colorscheme jammy 
+colorscheme desert 
 "colorscheme leo
 "colorscheme desertEx
 "auto syntax
@@ -85,7 +88,7 @@ vnoremap  #  y?<C-R>=escape(@", '\\/.*$^~[]')<CR><CR>
 "set selectmode=mouse,key
 
 "Font type and size
-set guifont=monospace\ 14
+set guifont=monospace\ 13
 
 "Hot key for MS control
 
@@ -236,4 +239,34 @@ call plug#begin()
 Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
-autocmd BufRead,BufNewFile *.svi set filetype=systemverilog
+
+
+autocmd BufRead,BufNewFile *.svi set filetype=verilog_systemverilog
+
+
+
+
+nnoremap <MiddleMouse> <Nop>
+nnoremap <2-MiddleMouse> <Nop>
+nnoremap <3-MiddleMouse> <Nop>
+nnoremap <4-MiddleMouse> <Nop>
+nnoremap <5-MiddleMouse> <Nop>
+
+inoremap <MiddleMouse> <Nop>
+inoremap <2-MiddleMouse> <Nop>
+inoremap <3-MiddleMouse> <Nop>
+inoremap <4-MiddleMouse> <Nop>
+inoremap <5-MiddleMouse> <Nop>
+
+vnoremap <MiddleMouse> <Nop>
+vnoremap <2-MiddleMouse> <Nop>
+vnoremap <3-MiddleMouse> <Nop>
+vnoremap <4-MiddleMouse> <Nop>
+vnoremap <5-MiddleMouse> <Nop>
+
+
+
+
+call plug#begin('~/.vim/plugged')
+Plug 'preservim/nerdtree'
+call plug#end()
